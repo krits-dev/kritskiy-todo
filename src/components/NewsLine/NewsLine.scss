@@ -1,0 +1,57 @@
+@import 'helpers/all.scss';
+
+.news-line-wrapper {
+  font-family: $font-family-primary;
+  color: $white;
+  font-size: $font-size-primary;
+  line-height: $line-height-primary;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  overflow: hidden;
+  width: 350px;
+  .news-line {
+    & div {
+      display: flex;
+      & span {
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 0 10px;
+        animation: news-line 10s linear infinite;
+      }
+    }
+  }
+  .loading {
+    padding-left: 5px;
+  }
+}
+.toggle-wrapper {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  display: flex;
+  .toggle {
+    background-image: url('toggle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px 30px;
+    width: 29px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .switch {
+    .dropdown-item-switch-wrapper {
+      position: relative;
+      margin-top: 0;
+    }
+  }
+}
+@keyframes news-line {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

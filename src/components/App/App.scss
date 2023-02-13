@@ -1,0 +1,27 @@
+@import 'helpers/all.scss';
+
+.bg-container {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: $bg-main;
+}
+.app-wrapper {
+  position: relative;
+  flex-direction: column;
+  width: 390px;
+  height: auto;
+  padding: 20px 20px 70px 20px;
+  background: $secondary;
+  border-radius: 30px;
+  margin: 40px auto;
+  h1 {
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: $white;
+  }
+}

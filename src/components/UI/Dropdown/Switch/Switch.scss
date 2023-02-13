@@ -1,0 +1,47 @@
+@import 'helpers/all.scss';
+
+.dropdown-item-switch-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 8px;
+
+  .switch {
+    &.MuiSwitch-root {
+      width: 50px;
+      height: 31px;
+      padding: 0;
+      border-radius: 20px;
+      & .MuiSwitch-thumb {
+        width: 25px;
+        height: 25px;
+        box-sizing: border-box;
+        color: $white;
+        background-image: url('cross.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 13px;
+      }
+      & .MuiButtonBase-root {
+        top: -6px;
+        left: -6px;
+      }
+      & .MuiSwitch-switchBase + .MuiSwitch-track {
+        background-color: $blue;
+        opacity: 1;
+      }
+      & .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+        background-color: $green;
+        opacity: 1;
+      }
+      & .MuiSwitch-switchBase.Mui-checked {
+        & .MuiSwitch-thumb {
+          background-image: url('done.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 14px 11px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import 'helpers/all.scss';
+
+.add-input-container {
+  padding-bottom: 10px;
+  .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    box-shadow: $box-shadow;
+    border-radius: 25px;
+    padding: 0 15px 0 5px;
+    .add-input {
+      & .MuiFormLabel-root {
+        font-family: $font-family-secondary;
+        color: $white;
+        font-size: 17px;
+        line-height: 30px;
+      }
+      & .MuiInputBase-root {
+        color: $white;
+        & .MuiOutlinedInput-notchedOutline {
+          outline: 0;
+          border-width: 0;
+        }
+      }
+    }
+  }
+  .radio-wrapper {
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    .radio-title {
+      font-family: $font-family-secondary;
+      color: $white;
+      font-size: 18px;
+      padding-left: 18px;
+    }
+    .radio-yellow {
+      color: $yellow;
+      margin-right: -10px;
+    }
+    .radio-blue {
+      color: $blue;
+      margin-right: -10px;
+    }
+    .radio-red {
+      color: $red;
+    }
+  }
+  .add-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: $box-shadow;
+    border-radius: 25px;
+    width: 50%;
+
+    .add-button {
+      &.MuiButton-root {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 25px;
+        &.MuiButton-text {
+          color: $white;
+        }
+        &:hover {
+          background-color: $primary;
+        }
+        &:disabled {
+          background-color: $disabled;
+        }
+      }
+    }
+  }
+}

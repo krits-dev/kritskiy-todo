@@ -1,0 +1,13 @@
+@import 'helpers/all.scss';
+
+.title {
+  h2 {
+    font-family: $font-family-primary;
+    color: $white;
+    font-size: $font-size-primary;
+    line-height: $line-height-primary;
+  }
+}
+.done {
+  text-decoration: line-through;
+}

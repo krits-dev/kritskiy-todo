@@ -1,0 +1,63 @@
+@import 'helpers/all.scss';
+
+.dropdown-item-wrapper {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+  .dropdown-item-left-border {
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 40px;
+    border-radius: 3px;
+  }
+  .dropdown-item-content {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    .dropdown-item-button {
+      &.MuiButton-root {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: $font-family-primary;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+        text-transform: none;
+        padding: 0 0 0 20px;
+        height: 47px;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    .dropdown-item-collapse {
+      font-family: $font-family-primary;
+      font-size: $font-size-secondary;
+      line-height: $line-height-secondary;
+      color: $grey;
+      text-transform: none;
+      word-wrap: break-word;
+      padding: 0 10px 5px 20px;
+    }
+  }
+  .red {
+    background: $red;
+  }
+  .blue {
+    background: $blue;
+  }
+  .yellow {
+    background: $yellow;
+  }
+  .d-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+}
